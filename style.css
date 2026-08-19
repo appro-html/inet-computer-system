@@ -35,6 +35,8 @@ img {
     display: block;
 }
 
+
+
 a {
     text-decoration: none;
 }
@@ -220,7 +222,7 @@ nav a {
     padding: 110px 0 10px;
 }
 
-    
+
 
     /* Dark Overlay */
 
@@ -279,7 +281,7 @@ nav a {
     margin-bottom: 10px;
 }
 
-    
+
 
 .hero p {
     color: #000000;
@@ -638,6 +640,11 @@ nav a {
     align-items: stretch;
 }
 
+
+/*==================================================
+            CONTACT INFORMATION BOX
+==================================================*/
+
 .contact-info-box {
     background: #fff;
     padding: 40px;
@@ -655,19 +662,30 @@ nav a {
         margin-bottom: 30px;
     }
 
+
+/*==================================================
+            CONTACT INFORMATION
+==================================================*/
+
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 26px;
 }
 
     .contact-info li {
-        display: flex;
-        align-items: flex-start;
-        gap: 15px;
-        color: #222;
-        font-weight: 500;
+        display: block;
     }
+
+        .contact-info li a {
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            column-gap: 15px;
+            align-items: start;
+            color: #111;
+            text-decoration: none;
+        }
+
 
         .contact-info li i {
             width: 48px;
@@ -681,6 +699,88 @@ nav a {
             font-size: 18px;
             flex-shrink: 0;
         }
+
+
+        /* TEXT */
+
+        /*==================================================
+        CONTACT TEXT - GAP FIX
+==================================================*/
+
+        .contact-info li a > div {
+            display: block !important;
+            color: #111 !important;
+            line-height: 1.45 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+            .contact-info li a > div strong {
+                display: block !important;
+                color: #111 !important;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                line-height: 1.45 !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+
+/* GAP BETWEEN CONTACT ITEMS */
+
+.contact-info {
+    gap: 20px !important;
+}
+
+
+
+
+
+    /* TITLE */
+    /*==================================================
+        CONTACT TEXT - GAP FIX
+==================================================*/
+
+    .contact-info li a > div {
+        display: block !important;
+        color: #111 !important;
+        line-height: 1.45 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+        .contact-info li a > div strong {
+            display: block !important;
+            color: #111 !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            line-height: 1.45 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+
+/* GAP BETWEEN CONTACT ITEMS */
+
+.contact-info {
+    gap: 20px !important;
+}
+
+
+    /* REMOVE DEFAULT LINK COLORS */
+
+    .contact-info li a:link,
+    .contact-info li a:visited,
+    .contact-info li a:hover,
+    .contact-info li a:active {
+        color: #111;
+        text-decoration: none;
+    }
+
+
+/*==================================================
+                GOOGLE MAP
+==================================================*/
 
 .map-box {
     border-radius: 20px;
@@ -698,7 +798,6 @@ nav a {
     .map-box .btn {
         margin-top: 20px;
     }
-
 /*==================================================
                     FOOTER
 ==================================================*/
@@ -1003,3 +1102,80 @@ footer ul {
         padding: 30px 20px;
     }
 }
+/*==================================================
+        CONTACT FINAL FIX
+==================================================*/
+
+.contact-info {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 26px !important;
+}
+
+    .contact-info li {
+        display: block !important;
+        width: 100% !important;
+    }
+
+        .contact-info li a {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            gap: 15px !important;
+            width: 100% !important;
+            color: #111 !important;
+            text-decoration: none !important;
+        }
+
+
+            /* CONTACT ICON BOX */
+
+            .contact-info li a > i {
+                display: flex !important;
+                width: 48px !important;
+                height: 48px !important;
+                min-width: 48px !important;
+                min-height: 48px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                align-items: center !important;
+                justify-content: center !important;
+                background: #0078ff !important;
+                color: #ffffff !important;
+                border-radius: 15px !important;
+                font-size: 18px !important;
+                flex-shrink: 0 !important;
+            }
+
+
+            /* CONTACT TEXT */
+
+            .contact-info li a > div {
+                display: block !important;
+                color: #111 !important;
+                line-height: 1.7 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+
+                /* CONTACT TITLE */
+
+                .contact-info li a > div strong {
+                    display: block !important;
+                    color: #111 !important;
+                    font-size: 16px !important;
+                    font-weight: 700 !important;
+                    margin: 0 !important;
+                }
+
+
+            /* CONTACT LINK STATES */
+
+            .contact-info li a:link,
+            .contact-info li a:visited,
+            .contact-info li a:hover,
+            .contact-info li a:active {
+                color: #111 !important;
+                text-decoration: none !important;
+            }
